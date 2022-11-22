@@ -1,374 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script
-			src="https://kit.fontawesome.com/66cfa0c826.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Mitr:wght@200;300;400;500&family=Petit+Formal+Script&family=Ruluko&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
-		<title>Sandwicheria & Pollos Asados - Santa Agustina</title>
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<nav class="navbar">
-					<div class="navbar__logo"><span id="logo">Santa Agustina</span></div>
-					<ul class="navbar__item__container">
-						<li class="navbar__item">
-							<a class="navbar__item__a" href="#menu">Menú</a>
-						</li>
-						<li class="navbar__item">
-							<a class="navbar__item__a" href="#pedido">Hacer Pedido</a>
-						</li>
-						<li class="navbar__item">
-							<a class="navbar__item__a" href="#contacto">Contácto</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<main class="main__container">
-				<section class="home__container">
-					<h1>Sandwichería y Pollos a las Brasas</h1>
-					<div class="container star__container">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-					</div>
-				</section>
-				<section id="menu">
-					<div class="section__container">
-						<h2 class="title">Menú</h2>
-						<article class="menu__container">
-							<div>
-								<h3 class="menu__subtitle">Primero elige tu Sandwich</h3>
-							</div>
-							<div class="menu__cards__container">
-								<article>
-									<div class="card__container">
-										<div>
-											<img
-												class="card__img"
-												loading="lazy"
-												src="/assets/hamburguesa.jpg"
-												alt="hamburguesa casera"
-												width="300"
-											/>
-											<div class="card__description">
-												<h2 class="card__title">Hamburguesa Casera</h2>
-												<span class="card__price">$4.990</span>
-											</div>
-										</div>
-									</div>
-								</article>
-								<article>
-									<div class="card__container">
-										<div>
-											<img
-												class="card__img"
-												loading="lazy"
-												src="/assets/hamburguesa.jpg"
-												alt="hamburguesa casera"
-												width="300"
-											/>
-											<div class="card__description">
-												<h2 class="card__title">Pollo o Lomo cerdo</h2>
-												<span class="card__price">$4.990</span>
-											</div>
-										</div>
-									</div>
-								</article>
-								<article>
-									<div class="card__container">
-										<div>
-											<img
-												class="card__img"
-												loading="lazy"
-												src="/assets/hamburguesa.jpg"
-												alt="hamburguesa casera"
-												width="300"
-											/>
-											<div class="card__description">
-												<h2 class="card__title">Carne Premium</h2>
-												<span class="card__price">$5.490</span>
-											</div>
-										</div>
-									</div>
-								</article>
-								<article>
-									<div class="card__container">
-										<div>
-											<img
-												class="card__img"
-												loading="lazy"
-												src="/assets/hamburguesa.jpg"
-												alt="hamburguesa casera"
-												width="300"
-											/>
-											<div class="card__description">
-												<h2 class="card__title">Mechada</h2>
-												<span class="card__price">$4.990</span>
-											</div>
-										</div>
-									</div>
-								</article>
-							</div>
-							<div>
-								<h3 class="menu__subtitle">Elige 4 ingredientes</h3>
-							</div>
-							<div class="menu__card__container">
-								<article>
-									<div class="card__container card__ingredients__container">
-										<div>
-											<div class="card__description__ingredients">
-												<div class="ingredients__list">
-													<span>Aceitunas</span>
-													<span>Ají verde</span>
-													<span>Chucrut</span>
-												</div>
-												<div class="ingredients__list">
-													<span>Queso cheddar</span>
-													<span>Cebolla morada</span>
-													<span>Porotos verdes</span>
-												</div>
-												<div class="ingredients__list">
-													<span>Lechuga</span>
-													<span>Palta</span>
-													<span>Pepinillos</span>
-												</div>
-												<div class="ingredients__list ingredients__list--last">
-													<span>Tomate</span>
-													<span>Choclo</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</article>
-							</div>
-							<div>
-								<h3 class="menu__subtitle">Ingredientes extra</h3>
-							</div>
-							<div class="menu__card__container">
-								<article>
-									<div class="card__container card__ingredients__container">
-										<div>
-											<div class="card__description__ingredients">
-												<div class="ingredients__list">
-													<span>Champiñón</span>
-													<span>Huevo</span>
-													<span>Cebolla caramelizada</span>
-													<span>Tocino ó Aros de cebolla</span>
-												</div>
-												<div class="ingredients__list">
-													<span>$800</span>
-													<span>$500</span>
-													<span>$800</span>
-													<span>$1.100</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</article>
-							</div>
-						</article>
 
-						<!-- variedades, slider -->
-						<section>
-							<div class="variedad__content">
-								<article>
-									<div class="variedad__card">
-										<div class="variedad__card__icon">
-											<img src="/assets/vienesa.png" alt="vienesas" />
-										</div>
-										<div class="variedad__card__content">
-											<h3>Vienesas</h3>
-											<table class="variedad__card__table">
-												<tr>
-													<td>Completo</td>
-													<td>$1.290</td>
-												</tr>
-												<tr>
-													<td>Italiana</td>
-													<td>$2.400</td>
-												</tr>
-												<tr>
-													<td>Dinámico</td>
-													<td>$1.600</td>
-												</tr>
-												<tr>
-													<td>Chacarero</td>
-													<td>$1.700</td>
-												</tr>
-												<tr>
-													<td>Brasileño</td>
-													<td>$2.090</td>
-												</tr>
-											</table>
-										</div>
-									</div>
-								</article>
-								<article>
-									<div class="variedad__card">
-										<div class="variedad__card__icon">
-											<img src="/assets/pollo.png" alt="vienesas" />
-										</div>
-										<div class="variedad__card__content">
-											<h3>Pollos asados</h3>
-											<table class="variedad__card__table">
-												<tr>
-													<td>Entero</td>
-													<td>$10.490</td>
-												</tr>
-												<tr>
-													<td><small>1/2</small> Pollo</td>
-													<td>$5.990</td>
-												</tr>
-												<tr>
-													<td><small>1/4</small> Pollo</td>
-													<td>$1.600</td>
-												</tr>
-											</table>
-										</div>
-									</div>
-								</article>
-								<article>
-									<div class="variedad__card">
-										<div class="variedad__card__icon">
-											<img src="/assets/fajita.png" alt="vienesas" />
-										</div>
-										<div class="variedad__card__content">
-											<h3>Fajitas</h3>
-											<table class="variedad__card__table">
-												<tr>
-													<td>Mechada</td>
-													<td>$4.290</td>
-												</tr>
-												<tr>
-													<td>Churrasco</td>
-													<td>$4.290</td>
-												</tr>
-												<tr>
-													<td>Pollo</td>
-													<td>$3.990</td>
-												</tr>
-												<tr>
-													<td>Champiñón</td>
-													<td>$3.990</td>
-												</tr>
-											</table>
-											<p>
-												<small
-													>Incluyen base de queso gouda y porción de papas
-													fritas</small
-												>
-											</p>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://kit.fontawesome.com/66cfa0c826.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Mitr:wght@200;300;400;500&family=Petit+Formal+Script&family=Ruluko&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Sandwicheria & Pollos Asados - Santa Agustina</title>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav class="navbar">
+				<div class="navbar__logo"><span id="logo">Santa Agustina</span></div>
+				<ul class="navbar__item__container">
+					<li class="navbar__item">
+						<a class="navbar__item__a" href="#menu">Menú</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__item__a" href="#pedido">Hacer Pedido</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__item__a" href="#contacto">Contácto</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main__container">
+			<section class="home__container">
+				<h1>Sandwichería y Pollos a las Brasas</h1>
+				<div class="container star__container">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+			</section>
+			<section id="menu">
+				<div class="section__container">
+					<h2 class="title">Menú</h2>
+					<article class="menu__container">
+						<div>
+							<h3 class="menu__subtitle">Primero elige tu Sandwich</h3>
+						</div>
+						<div class="menu__cards__container">
+							<article>
+								<div class="card__container">
+									<div>
+										<img class="card__img" loading="lazy" src="./assets/hamburguesa.jpg"
+											alt="hamburguesa casera" width="300" />
+										<div class="card__description">
+											<h2 class="card__title">Hamburguesa Casera</h2>
+											<span class="card__price">$4.990</span>
 										</div>
 									</div>
-								</article>
-								<article>
-									<div class="variedad__card">
-										<div class="variedad__card__icon">
-											<img src="/assets/papas-fritas.png" alt="vienesas" />
-										</div>
-										<div class="variedad__card__content">
-											<h3>Papas fritas</h3>
-											<table class="variedad__card__table">
-												<tr>
-													<td>Gigante</td>
-													<td>$4.500</td>
-												</tr>
-												<tr>
-													<td>Mediana</td>
-													<td>$2.400</td>
-												</tr>
-												<tr>
-													<td>Pequeña</td>
-													<td>$1.000</td>
-												</tr>
-											</table>
+								</div>
+							</article>
+							<article>
+								<div class="card__container">
+									<div>
+										<img class="card__img" loading="lazy" src="./assets/hamburguesa.jpg"
+											alt="hamburguesa casera" width="300" />
+										<div class="card__description">
+											<h2 class="card__title">Pollo o Lomo cerdo</h2>
+											<span class="card__price">$4.990</span>
 										</div>
 									</div>
-								</article>
-								<article>
-									<div class="variedad__card">
-										<div class="variedad__card__icon">
-											<img src="/assets/salchipapas.png" alt="vienesas" />
-										</div>
-										<div class="variedad__card__content">
-											<h3>Salchipapas</h3>
-											<table class="variedad__card__table">
-												<tr>
-													<td>Gigante</td>
-													<td>$6.200</td>
-												</tr>
-												<tr>
-													<td>Mediana</td>
-													<td>$4.700</td>
-												</tr>
-												<tr>
-													<td>Pequeña</td>
-													<td>$2.200</td>
-												</tr>
-											</table>
+								</div>
+							</article>
+							<article>
+								<div class="card__container">
+									<div>
+										<img class="card__img" loading="lazy" src="./assets/hamburguesa.jpg"
+											alt="hamburguesa casera" width="300" />
+										<div class="card__description">
+											<h2 class="card__title">Carne Premium</h2>
+											<span class="card__price">$5.490</span>
 										</div>
 									</div>
-								</article>
-								<article>
-									<div class="variedad__card">
-										<div class="variedad__card__icon">
-											<img src="/assets/chorrillana.png" alt="vienesas" />
-										</div>
-										<div class="variedad__card__content">
-											<h3>Chorrillana Sta. Agustina</h3>
-											<table class="variedad__card__table">
-												<tr>
-													<td>Gigante</td>
-													<td>$13.190</td>
-												</tr>
-												<tr>
-													<td>Mediana</td>
-													<td>$9.190</td>
-												</tr>
-											</table>
-											<p>
-												<small
-													>(Tocino, champiñones, huevos fritos, cebolla
-													caramelizada y morada, longaniza ahumada, vienesas,
-													carne desmechada)</small
-												>
-											</p>
+								</div>
+							</article>
+							<article>
+								<div class="card__container">
+									<div>
+										<img class="card__img" loading="lazy" src="./assets/hamburguesa.jpg"
+											alt="hamburguesa casera" width="300" />
+										<div class="card__description">
+											<h2 class="card__title">Mechada</h2>
+											<span class="card__price">$4.990</span>
 										</div>
 									</div>
-								</article>
-							</div>
-						</section>
-						<!-- variedades, slider -->
-					</div>
-				</section>
-				<section id="pedido">
-					<div>
-						<h2 class="title">Haz tu pedido</h2>
-						<article></article>
-					</div>
-				</section>
-				<section id="contacto">
-					<div>
-						<h2 class="title">Contácto</h2>
-						<article></article>
-					</div>
-				</section>
-				<footer>footer</footer>
-			</main>
-		</div>
-	</body>
+								</div>
+							</article>
+						</div>
+						<div>
+							<h3 class="menu__subtitle">Elige 4 ingredientes</h3>
+						</div>
+						<div class="menu__card__container">
+							<article>
+								<div class="card__container card__ingredients__container">
+									<div>
+										<div class="card__description__ingredients">
+											<div class="ingredients__list">
+												<span>Aceitunas</span>
+												<span>Ají verde</span>
+												<span>Chucrut</span>
+											</div>
+											<div class="ingredients__list">
+												<span>Queso cheddar</span>
+												<span>Cebolla morada</span>
+												<span>Porotos verdes</span>
+											</div>
+											<div class="ingredients__list">
+												<span>Lechuga</span>
+												<span>Palta</span>
+												<span>Pepinillos</span>
+											</div>
+											<div class="ingredients__list ingredients__list--last">
+												<span>Tomate</span>
+												<span>Choclo</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div>
+							<h3 class="menu__subtitle">Ingredientes extra</h3>
+						</div>
+						<div class="menu__card__container">
+							<article>
+								<div class="card__container card__ingredients__container">
+									<div>
+										<div class="card__description__ingredients">
+											<div class="ingredients__list">
+												<span>Champiñón</span>
+												<span>Huevo</span>
+												<span>Cebolla caramelizada</span>
+												<span>Tocino ó Aros de cebolla</span>
+											</div>
+											<div class="ingredients__list">
+												<span>$800</span>
+												<span>$500</span>
+												<span>$800</span>
+												<span>$1.100</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</article>
+
+					<!-- variedades, slider -->
+					<section>
+						<div class="variedad__content">
+							<article>
+								<div class="variedad__card">
+									<div class="variedad__card__icon">
+										<img src="./assets/vienesa.png" alt="vienesas" />
+									</div>
+									<div class="variedad__card__content">
+										<h3>Vienesas</h3>
+										<table class="variedad__card__table">
+											<tr>
+												<td>Completo</td>
+												<td>$1.290</td>
+											</tr>
+											<tr>
+												<td>Italiana</td>
+												<td>$2.400</td>
+											</tr>
+											<tr>
+												<td>Dinámico</td>
+												<td>$1.600</td>
+											</tr>
+											<tr>
+												<td>Chacarero</td>
+												<td>$1.700</td>
+											</tr>
+											<tr>
+												<td>Brasileño</td>
+												<td>$2.090</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="variedad__card">
+									<div class="variedad__card__icon">
+										<img src="./assets/pollo.png" alt="vienesas" />
+									</div>
+									<div class="variedad__card__content">
+										<h3>Pollos asados</h3>
+										<table class="variedad__card__table">
+											<tr>
+												<td>Entero</td>
+												<td>$10.490</td>
+											</tr>
+											<tr>
+												<td><small>1/2</small> Pollo</td>
+												<td>$5.990</td>
+											</tr>
+											<tr>
+												<td><small>1/4</small> Pollo</td>
+												<td>$1.600</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="variedad__card">
+									<div class="variedad__card__icon">
+										<img src="./assets/fajita.png" alt="vienesas" />
+									</div>
+									<div class="variedad__card__content">
+										<h3>Fajitas</h3>
+										<table class="variedad__card__table">
+											<tr>
+												<td>Mechada</td>
+												<td>$4.290</td>
+											</tr>
+											<tr>
+												<td>Churrasco</td>
+												<td>$4.290</td>
+											</tr>
+											<tr>
+												<td>Pollo</td>
+												<td>$3.990</td>
+											</tr>
+											<tr>
+												<td>Champiñón</td>
+												<td>$3.990</td>
+											</tr>
+										</table>
+										<p>
+											<small>Incluyen base de queso gouda y porción de papas
+												fritas</small>
+										</p>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="variedad__card">
+									<div class="variedad__card__icon">
+										<img src="./assets/papas-fritas.png" alt="vienesas" />
+									</div>
+									<div class="variedad__card__content">
+										<h3>Papas fritas</h3>
+										<table class="variedad__card__table">
+											<tr>
+												<td>Gigante</td>
+												<td>$4.500</td>
+											</tr>
+											<tr>
+												<td>Mediana</td>
+												<td>$2.400</td>
+											</tr>
+											<tr>
+												<td>Pequeña</td>
+												<td>$1.000</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="variedad__card">
+									<div class="variedad__card__icon">
+										<img src="./assets/salchipapas.png" alt="vienesas" />
+									</div>
+									<div class="variedad__card__content">
+										<h3>Salchipapas</h3>
+										<table class="variedad__card__table">
+											<tr>
+												<td>Gigante</td>
+												<td>$6.200</td>
+											</tr>
+											<tr>
+												<td>Mediana</td>
+												<td>$4.700</td>
+											</tr>
+											<tr>
+												<td>Pequeña</td>
+												<td>$2.200</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</article>
+							<article>
+								<div class="variedad__card">
+									<div class="variedad__card__icon">
+										<img src="./assets/chorrillana.png" alt="vienesas" />
+									</div>
+									<div class="variedad__card__content">
+										<h3>Chorrillana Sta. Agustina</h3>
+										<table class="variedad__card__table">
+											<tr>
+												<td>Gigante</td>
+												<td>$13.190</td>
+											</tr>
+											<tr>
+												<td>Mediana</td>
+												<td>$9.190</td>
+											</tr>
+										</table>
+										<p>
+											<small>(Tocino, champiñones, huevos fritos, cebolla
+												caramelizada y morada, longaniza ahumada, vienesas,
+												carne desmechada)</small>
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</section>
+					<!-- variedades, slider -->
+				</div>
+			</section>
+			<section id="pedido">
+				<div>
+					<h2 class="title">Haz tu pedido</h2>
+					<article></article>
+				</div>
+			</section>
+			<section id="contacto">
+				<div>
+					<h2 class="title">Contácto</h2>
+					<article></article>
+				</div>
+			</section>
+			<footer>footer</footer>
+		</main>
+	</div>
+</body>
+
 </html>
