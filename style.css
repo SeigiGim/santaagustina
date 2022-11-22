@@ -1,0 +1,308 @@
+:root {
+	--primary-color: #361500;
+	--secondary-color: #cc9544;
+	--back-color: #1c0a00;
+	--back-color-transparent: rgba(28, 10, 0, 0.5);
+	--back-color-transparent-2: rgba(51, 18, 0, 0.5);
+	--back-color-2: #331200;
+	--shade: #0f0500;
+	--titles-color: #d5b586;
+	--text-color: #d6d6d6;
+	--text-color-2: #15120d;
+
+	/*font*/
+	--logo-font: "Petit Formal Script", cursive;
+	--titles-font: "Lobster Two", cursive;
+	--primary-font: "Ruluko", sans-serif;
+
+	/*SIZE FONTS*/
+	/*small lengths*/
+	--small-1: 0.25rem;
+	--small-2: 0.5rem;
+	--small-3: 0.75rem;
+
+	/*medium lengths*/
+	--medium-1: 1rem;
+	--medium-2: 1.25rem;
+	--medium-3: 1.5rem;
+
+	/*large lengths*/
+	--large-1: 2rem;
+	--large-2: 3rem;
+	--large-3: 4rem;
+	--large-4: 8rem;
+}
+/*colors*/
+
+html,
+body {
+	scroll-behavior: smooth;
+	background-color: var(--back-color);
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: var(--small-3);
+	box-sizing: border-box;
+	position: relative;
+}
+
+@media (min-width: 768px) {
+	#logo {
+		color: var(--secondary-color);
+		font-family: var(--logo-font);
+		font-size: var(--large-1);
+		font-weight: bold;
+		text-align: center;
+	}
+
+	header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+
+	.navbar {
+		position: fixed;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 2px solid var(--back-color-2);
+		padding: 0 var(--small-3);
+		padding-top: var(--small-1);
+		margin-top: var(--large-1);
+		background-color: var(--back-color-transparent);
+		width: 100%;
+		z-index: 100;
+		backdrop-filter: blur(4px);
+		box-shadow: 0px 4px 16px 0px var(--shade);
+	}
+
+	.navbar__item__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-end;
+	}
+
+	.navbar__item {
+		list-style: none;
+		border-left: solid 2px var(--titles-color);
+		margin-left: var(--small-1);
+	}
+
+	.navbar__item__a {
+		font-family: var(--titles-font);
+		font-size: var(--medium-2);
+		text-decoration: none;
+		color: var(--titles-color);
+		list-style: none;
+		text-align: center;
+		padding-left: var(--small-1);
+		padding-right: var(--small-1);
+		transition: all 0.5s;
+	}
+
+	.navbar__item__a:hover {
+		cursor: pointer;
+		color: var(--text-color);
+	}
+
+	.main__container {
+		box-sizing: border-box;
+	}
+
+	h1 {
+		color: var(--titles-color);
+		font-family: var(--titles-font);
+		font-size: var(--large-3);
+		text-align: center;
+		padding-bottom: var(--medium-1);
+		border-bottom: 16px solid var(--back-color-2);
+	}
+
+	.star__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 50%;
+		margin: auto;
+		color: var(--secondary-color);
+	}
+
+	.title {
+		color: var(--titles-color);
+		font-family: var(--titles-font);
+		font-size: var(--large-2);
+		text-align: center;
+	}
+
+	section {
+		margin-top: var(--large-3);
+	}
+
+	.menu__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 90%;
+		margin: auto;
+		padding: var(--small-3);
+		border: 8px dashed var(--back-color-2);
+	}
+
+	.menu__subtitle {
+		font-family: var(--primary-font);
+		font-size: var(--medium-3);
+		color: var(--titles-color);
+		text-align: center;
+	}
+
+	/*menu cards container*/
+	.menu__cards__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	/*cards*/
+	.card__container {
+		background-color: var(--back-color-2);
+		font-family: var(--titles-font);
+		color: var(--secondary-color);
+		min-width: 300px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 8px;
+		padding: var(--medium-3);
+		border-radius: 8px;
+		box-shadow: 0px 8px 16px 0px var(--shade);
+		transition: all 0.1s ease;
+	}
+
+	.card__container:hover {
+		background-color: var(--primary-color);
+		transform: scale(1.1);
+		background-color: var(--back-color-transparent-2);
+		backdrop-filter: blur(4px);
+	}
+
+	.card__img {
+		border-radius: 4px;
+		box-shadow: 0px 4px 2px 0px var(--shade);
+		size: cover;
+	}
+
+	.card__description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.card__title {
+		font-size: var(--large-1);
+	}
+
+	.card__price {
+		font-size: var(--medium-3);
+	}
+
+	.card__ingredients__container {
+		font-family: var(--primary-font);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 800px;
+		box-sizing: border-box;
+	}
+
+	.card__description__ingredients {
+		display: flex;
+		justify-content: start;
+		align-items: start;
+		font-size: var(--medium-1);
+		box-sizing: border-box;
+	}
+
+	.ingredients__list {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		/* justify-content: start; */
+		margin: auto 16px;
+	}
+
+	.ingredients__list > span {
+		padding: var(--small-1);
+		transition: all 0.2s ease;
+	}
+
+	.ingredients__list > span:hover {
+		color: var(--text-color);
+		transform: scale(1.1);
+	}
+
+	.card__fajitas__footer {
+		text-align: center;
+		margin-bottom: 0;
+		color: var(--titles-color);
+	}
+
+	.card__papasfritas__footer {
+		padding-left: var(--medium-1);
+		margin-bottom: 0;
+	}
+
+	.variedad__content {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		width: 90%;
+		margin: auto;
+		padding: var(--small-3);
+		border: 8px dashed var(--back-color-2);
+	}
+
+	.variedad__card {
+		background-color: var(--titles-color);
+		color: var(--text-color-2);
+		padding: var(--medium-1);
+		border-radius: 8px;
+		max-width: 200px;
+		height: 100%;
+		margin: 8px;
+		box-shadow: 0px 8px 16px 0px var(--shade);
+		transition: all 0.1s ease;
+	}
+
+	.variedad__card__icon {
+		padding: 0;
+		margin: 0;
+	}
+
+	.variedad__card__content > h3 {
+		font-size: var(--medium-3);
+		font-family: var(--titles-font);
+	}
+
+	.variedad__card__content > table,
+	p {
+		font-size: var(--medium-2);
+		font-family: var(--primary-font);
+		font-weight: 600;
+	}
+}
+
+/*Aceitunas - Ají verde - Chucrut - Lechuga - Palta -
+													Pepinillos - Porotos Verdes - Tomate - Choclo - Queso
+													Cheddar - Cebolla Morada*/
